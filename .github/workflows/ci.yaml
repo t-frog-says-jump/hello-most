@@ -14,7 +14,7 @@ jobs:
         os: [ubuntu-22.04]
         python-version: ["3.11.9"]
       fail-fast: true
-    runs-on: ${{ matrix.os }}
+    runs-on: self-hosted
     steps:
       - uses: actions/checkout@v4
       - name: Set up Python ${{ matrix.python-version }}
